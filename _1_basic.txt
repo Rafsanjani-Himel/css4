@@ -1,0 +1,6 @@
+css stands for cascading style sheets.
+
+css is the language we use to style an HTML document.
+css describes how html elements should be displayed .
+css saves a lot of work and can control the oayout of multiple web pages all at once.
+w3c means world wide web consortium .this created css

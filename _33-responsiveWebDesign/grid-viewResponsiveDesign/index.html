@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .header{
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .nav-menu{
+            background-color: gray;
+            padding: 30px 20px;
+            
+        }
+        .nav-menu a{
+            text-decoration: none;
+            font-size: 17px;
+            padding: 20px;
+            color: white;
+            display: block;
+            text-align: center;
+           
+        }
+        .main{
+            background-color: gainsboro;
+            padding: 20px 150x;
+            text-align: center;
+           
+        }
+        .aside{
+            background-color: green;
+            color: white;
+            padding: 20px 20px;
+            text-align: center;
+            
+            
+        }
+
+        .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+
+        /* for desktop */
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66;}
+        .col-12{width: 100%;}
+
+        /* for floating  all ,select all col-*/
+        [class*=col-]{
+            float: left;
+            padding: 10px;
+        }
+        /* as we float row,we have to clear float of row */
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+        /* for mobile device */
+        @media screen and (max-width:768px){
+            [class*="col-"]{
+                width:100%
+            }
+            .nav-menu a{
+                text-align: center;
+                margin: 10px;
+                background-color: lightseagreen;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="header ">
+            <h1>Rafsanjani Himel</h1>
+        </div>
+
+        <div class="row ">
+
+            <div class="nav-menu col-3">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="main col-6">
+                <h2>I am a Web developer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quaerat expedita ad placeat tenetur odit velit ipsum earum perferendis aut. Minus asperiores vitae, suscipit aliquam neque eveniet consequuntur dolores hic.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis est molestiae, temporibus cumque neque rerum id, quod harum at libero consequatur vitae veritatis similique fuga voluptates eveniet vel? Voluptatem, laboriosam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident odio veritatis quia laborum quos beatae ratione aspernatur sequi, expedita velit aperiam praesentium vel officiis earum magnam eum dolore exercitationem et tenetur placeat. Quis vero cum consectetur repudiandae deserunt suscipit eligendi eos, corporis ipsa, ex dolores quo quia. Harum temporibus quibusdam consectetur accusantium in voluptatem illo reprehenderit esse explicabo libero consequuntur dicta reiciendis fugiat cupiditate aliquam incidunt quidem sit, quaerat fugit eveniet tenetur eius repellat? Numquam veritatis quae maxime praesentium similique ea ab explicabo aliquam perferendis architecto. Officiis rem asperiores commodi sit id quis fugit facilis, odit, laborum dolor perferendis optio.</p>
+            </div>
+            <div class="aside col-3">
+                <h3>What i love?</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat aliquam omnis commodi, hic aspernatur eos, voluptate minima debitis blanditiis iure atque temporibus incidunt, non inventore consequatur porro. Non, officiis sunt.</p>
+                <h3>What I want?</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In perferendis soluta earum quasi optio sed dolorum tenetur cumque nostrum ipsam placeat magni ea voluptatem, aliquid sapiente? Harum modi facilis dolorem.</p>
+                <h3>what you want?</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis esse molestias, ipsum eligendi vel expedita sequi exercitationem ab harum voluptatibus voluptates assumenda minima dolor quisquam, a ut minus. Quia corporis a asperiores, mollitia vel consequatur perspiciatis ut minus possimus!</p>
+            </div>
+        </div>
+        <div class="footer">
+            Designed by &copy;2021.Rafsanjani Himel
+        </div>
+    
+</body>
+</html>
